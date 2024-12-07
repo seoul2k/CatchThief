@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>411</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>SimSong</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>警察抓小偷</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:#BDBDBD;</string>
+  </property>
+  <widget class="QPushButton" name="SingerPlayer">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>250</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>FZQingKeBenYueSongS-R-GB</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+border:2px solid #252121;
+background-color:#464242;
+color:#CFFEAE;</string>
+   </property>
+   <property name="text">
+    <string>单机游戏</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AI">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>350</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>FZQingKeBenYueSongS-R-GB</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+border:2px solid #252121;
+background-color:#464242;
+color:#CFFEAE;</string>
+   </property>
+   <property name="text">
+    <string>人机对战</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>251</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>FZQingKeBenYueSongS-R-GB</family>
+     <pointsize>48</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>警察抓小偷</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RuleButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>FZQingKeBenYueSongS-R-GB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:10px;
+border:2px solid #252121;
+background-color:#464242;
+color:#CFFEAE;</string>
+   </property>
+   <property name="text">
+    <string>?</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
