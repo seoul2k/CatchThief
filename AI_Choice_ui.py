@@ -26,7 +26,7 @@ class Ui_AI_Choice(object):
         self.label.setGeometry(QtCore.QRect(120, 50, 211, 101))
         font = QtGui.QFont()
         font.setFamily("FZQingKeBenYueSongS-R-GB")
-        font.setPointSize(48)
+        font.setPointSize(36)
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(AI_Choice)
@@ -78,4 +78,4 @@ class Ui_AI_Choice(object):
         self.label_2.setText(_translate("AI_Choice", "你是："))
         self.Police.setText(_translate("AI_Choice", "警察"))
         self.Thief.setText(_translate("AI_Choice", "小偷"))
-import fanhui_rc
+import fanhui

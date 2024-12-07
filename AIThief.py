@@ -1,7 +1,7 @@
 # SingerPlayer.py
 from PyQt5.QtWidgets import QWidget, QMessageBox
-from PyQt5.QtGui import QPainter, QPen, QColor, QFont
-from PyQt5.QtCore import Qt, QPoint, QRectF, QTimer, pyqtSignal
+from PyQt5.QtGui import QPainter, QPen, QColor
+from PyQt5.QtCore import Qt, QPoint, QTimer, pyqtSignal
 import random
 import math
 from Floyd import floyd_warshall
@@ -325,6 +325,7 @@ class GraphWidget_AITHEIF(QWidget):
                     self.thief_has_treasure = True
                     self.show_thief_picked_up_treasure_message()
                     self.point_types[self.treasure_position] = 'Normal'  # 将宝藏点类型改为普通
+                    self.treasure_position = None
                 self.check_game_over()
                 self.current_turn = 'Police'
                 self.update_game_state()

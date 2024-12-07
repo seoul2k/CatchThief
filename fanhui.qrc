@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="back">
     <file>fanhui.png</file>
+    <file>Font.ttf</file>
   </qresource>
 </RCC>

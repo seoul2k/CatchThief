@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QMessageBox
-from PyQt5.QtGui import QPainter, QPen, QColor, QFont
-from PyQt5.QtCore import Qt, QPoint, QRectF, QTimer, pyqtSignal
+from PyQt5.QtGui import QPainter, QPen, QColor
+from PyQt5.QtCore import Qt, QPoint, pyqtSignal
 import random
 import math
 from Floyd import floyd_warshall
@@ -173,9 +173,9 @@ class GraphWidget_AIPOLICE(QWidget):
             highlight_brush = QColor(255, 255, 255, 128)  # 半透明白色用于高亮
             painter.setBrush(highlight_brush)
             if self.current_turn == 'Thief':
-                painter.drawEllipse(self.points[self.thief_position], point_radius + 4, point_radius + 4)
+                painter.drawEllipse(self.points[self.thief_position], point_radius + 2, point_radius + 2)
             else:
-                painter.drawEllipse(self.points[self.police_position], point_radius + 4, point_radius + 4)
+                painter.drawEllipse(self.points[self.police_position], point_radius + 2, point_radius + 2)
 
     def mousePressEvent(self, event):
         if self.game_over:
@@ -191,6 +191,7 @@ class GraphWidget_AIPOLICE(QWidget):
                     self.thief_has_treasure = True
                     self.show_thief_picked_up_treasure_message()
                     self.point_types[self.treasure_position] = 'Normal'  # 将宝藏点类型改为普通
+                    self.treasure_position = None
                 self.check_game_over()
                 self.current_turn = 'Police'
                 self.ai_move_police()
@@ -225,11 +226,11 @@ class GraphWidget_AIPOLICE(QWidget):
     def check_game_over(self):
         if self.police_position == self.thief_position:
             self.game_over = True
-            self.winner = 'Police'
+            self.winner = '警察'
             self.show_winner_message()
         elif self.thief_position == self.exit_position and self.thief_has_treasure:
             self.game_over = True
-            self.winner = 'Thief'
+            self.winner = '小偷'
             self.show_winner_message()
 
     def show_winner_message(self):

@@ -1,12 +1,14 @@
 # main.py
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QDialog, QVBoxLayout, QHBoxLayout, QPushButton, QComboBox, QFileDialog, QTableWidget, QTableWidgetItem, QHeaderView, QMessageBox
+from PyQt5.QtWidgets import QApplication, QWidget, QDialog
 import MainWindow as ui
+from PyQt5.QtGui import QFontDatabase,QFont
 from PyQt5.QtCore import Qt
 from SingerPlayer import GraphWidget
 from AI_Choice import AI_Choice
 from Rule import Ui_Rule
 from Loading import LoadingCircle
+import fanhui
 class MyRule(QDialog,Ui_Rule):
     def __init__(self):
         super().__init__()
@@ -21,7 +23,15 @@ class MyWidget(QWidget, ui.Ui_MainWindow):
         self.RuleButton.clicked.connect(self.show_rule)
         self.singerplayerwindow = None  # 初始化游戏窗口为None
         self.aichoice = None  # 初始化游戏窗口为None
-        self.myRule = None
+        self.myRule = None        
+        font_id = QFontDatabase.addApplicationFont(":/back/Font.ttf")
+        if font_id == -1:
+            print("Failed to load custom font.")
+        else:
+            families = QFontDatabase.applicationFontFamilies(font_id)
+            if len(families) > 0:
+                font_family = families[0]
+                self.setFont(QFont(font_family))
     def show_singerplayer_window(self):
         if self.singerplayerwindow is None:
             self.singerplayerwindow = GraphWidget(parent=self)

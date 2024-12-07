@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QHBoxLayout, QPushButton, QComboBox, QFileDialog, QTableWidget, QTableWidgetItem, QHeaderView, QMessageBox
+from PyQt5.QtWidgets import QApplication, QWidget
 from AI_Choice_ui import Ui_AI_Choice
 from PyQt5.QtCore import Qt,pyqtSignal
 from AIPolice import GraphWidget_AIPOLICE

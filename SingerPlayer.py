@@ -1,7 +1,7 @@
 # SingerPlayer.py
 from PyQt5.QtWidgets import QWidget, QMessageBox
-from PyQt5.QtGui import QPainter, QPen, QColor, QFont
-from PyQt5.QtCore import Qt, QPoint, QRectF, QTimer, pyqtSignal
+from PyQt5.QtGui import QPainter, QPen, QColor 
+from PyQt5.QtCore import Qt, QPoint, pyqtSignal
 import random
 import math
 
