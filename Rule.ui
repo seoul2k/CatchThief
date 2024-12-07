@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Rule</class>
+ <widget class="QDialog" name="Rule">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>569</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>规则</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>330</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>知道了</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>531</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>FZFangSong-Z02S</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>游戏分为两个阵营：警察阵营和小偷阵营。小偷的任务是：寻找宝藏并且带离出口，而警察则需要抓住小偷，阻止他偷东西。游戏的地图是由点和线组成的，每个点之间有线连接，可以通过这些线到达另一个点。接下来是几个特殊的点：绿色：出口；天蓝：宝藏；蓝灰：小偷出生点；粉红：警察出生点；橙色：小偷目前所在位置；紫色：警察目前所在位置。游戏先由小偷开始，其次是警察，每人每回合只能走一步（从一个点到另一个点）由鼠标控制。当前回合的角色会高亮显示。线也有特殊的路线：橙色：小偷专用路线；紫色：警察专用路线。顾名思义，小偷专用路线和警察专用路线只能是小偷或警察才能走</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>0</y>
+     <width>391</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>FZFangSong-Z02S</family>
+     <pointsize>48</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>警察抓小偷-规则</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
